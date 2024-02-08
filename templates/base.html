@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {background-color: beige;}
+        h1   {color: darkgreen;font-family: verdana;font-size: 300%;}
+        h2   {color: black;font-family: verdana;font-size: 150%;border: 2px solid black;}
+        p    {color: darkolivegreen;font-family: verdana;font-size: 90%; }
+    </style>
+</head>
+<body>
+
+<head>
+    <style>
+        .header-container {background-color:beige;border-bottom: 2px solid #ddd;padding: 20px;}
+        header {max-width: 1000px;margin: 0 auto;}
+    </style>
+</head>
+
+    <div class="header-container">
+        <header>
+        <a href="{{ url_for('main.index') }}" class="navbar-item">
+            Home
+        </a>
+        <a href="{{ url_for('blog.blog_home') }}" class="navbar-item">
+            Recipe
+        </a>
+        <a href="{{ url_for('locator.locator') }}" class="navbar-item">
+            Find Food
+        </a>
+         <a href="{{ url_for('Aboutus.Aboutus') }}" class="navbar-item">
+            About us
+        </a>
+        <a href="{{ url_for('users.register') }}" class="navbar-item">
+            Register
+        </a>
+        <a href="{{ url_for('users.login') }}" class="navbar-item">
+            Login
+        </a>
+        <a href="" class="navbar-item">
+            Log out
+        </a>
+        </header>
+    </div>
+
+
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+
+</section>
+</body>
+
+</html>

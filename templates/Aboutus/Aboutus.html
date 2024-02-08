@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<head>
+<style>
+.box {width: 10%;padding: 10px;border: 2px solid black;border-radius: 10px/20px;background-clip: padding-box;text-align: center;}
+.button {font-size: 1em;color: black;text-decoration: none;cursor: pointer;transition: all 0.3s ease-out;}
+.button:hover {background: green;}
+.overlay {position: fixed;top: 0;bottom: 0;left: 0;right: 0;background: black;transition: opacity 500ms;visibility: hidden;opacity: 0;}
+.overlay:target {visibility: visible;opacity: 1;}
+.popup {margin: 70px auto;padding: 20px;background: white;border-radius: 5px;width: 30%;position: relative;transition: all 5s ease-in-out;}
+</style>
+</head>
+
+    <h1 class="title is-1">About us </h1>
+
+
+    <h2 class="subtitle">WORLD HUNGER FACTS</h2>
+    <p> World hunger is increasing and nearly 10% of people worldwide are affected. Between 2019 and 2022, the number of people who are malnourished has grown by up to 150 million.  The covid-19 pandemic has been a major contributor to this crisis.</p>
+
+
+    <h2 class="subtitle">CAUSES OF HUNGER </h2>
+    <p> The root causes of hunger are poverty, climate change, natural disasters, inadequate access to resources and education.</p>
+
+
+    <h2 class="subtitle">EFFECTS OF HUNGER</h2>
+    <p> Hunger is a severe and ongoing problem that impacts millions of individuals globally, approximately 811 million individuals worldwide are malnourished. This hunger crisis can have major detrimental effects on physical and mental health, education, and overall well-being.</p>
+
+
+
+    <h2 class="subtitle">WHO DOES HUNGER AFFECT?</h2>
+    <p> Many individuals who suffer from hunger live in the developing world. In these regions, extreme poverty and limited access to nourishing food are common, which can result in malnutrition. The harmful consequences of hunger and malnutrition are particularly dangerous for women and children. </p>
+
+
+    <h2 class="subtitle">HOW TO ADDRESS THIS ISSUE?</h2>
+    <p> In order to effectively address poverty, it is crucial to address one of its primary causes, hunger, which is why the website was made. The website aims to provide individuals and communities with access to information and resources to help locate food banks and improve their overall well-being. </p>
+
+{% endblock %}
